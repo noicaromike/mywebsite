@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+
+
+:root{
+    --title: 'Roboto', sans-serif;
+    --font: 'Nunito', sans-serif;
+    --dark-teal: #072227;
+    --semi-dark-teal: #35858B;
+    --teal: #4FBDBA;
+    --light-teal: #AEFEFF;
+    --white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--font);
+    background-color: var(--semi-dark-teal);
+}
+.bg-white{
+    background-color: var(--white);
+}
+.section{
+    padding: 4rem 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 2rem;
+
+}
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.nav__link{
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: .913rem;
+}
+
+/* hero section */
+
+.hero-section{
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--title);
+
+}
+.hero-section h1{
+    font-size: 2rem;
+    
+}
+.hero-section h2{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    letter-spacing: 5px;
+}
+.hero-section span{
+    color: var(--dark-teal);
+}
+.hero-section p{
+    letter-spacing: 5px;
+}
+.about-section > *{
+    margin-bottom: 1rem;
+}
+.portfolio h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: var(--white);
+    font-family: var(--title);
+    letter-spacing: 2px;
+}
+.portfolio h2{
+    color: var(--white);
+}
+
+.work{
+    margin-top: 3rem;
+    
+}
+.work h3{
+    color: var(--white);
+}
+.work p{
+    max-width: 450px;
+    margin-bottom: 1rem;
+}
+.btn{
+    padding: 10px 25px;
+    background-color: var(--teal);
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: 600;
+    transition: all .3s;
+    box-shadow: rgba(0, 0, 0, 0.12);
+    
+}
+.btn:hover{
+    background-color: var(--dark-teal);
+}
+.resume > *{
+    margin-bottom: 1rem;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.name h1{
+    font-size: 2rem;
+}
+.name a{
+    font-size: 1.3rem;
+    color: #000;
+}
+.position p{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    max-width: 700px;
+}
+img{
+    width: 100%;
+}
+.cyber img{
+    width: 150px;
+    height: 150px;
+}
+.networking img{
+    width: 150px;
+    height: 150px;
+}
+.download{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+
+@media screen and (min-width:768px){
+    .hero-section h1{
+        font-size: 5rem;
+
+    }
+    .about-section > *{
+        max-width: 700px;
+    }
+    .about-section h2{
+        font-size: 3rem;
+    }
+    .wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+    .workexp{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+}
